@@ -5,21 +5,18 @@
 
 body{
     background-color: rgb(240,240,240);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 .box{
     /* border:2px solid red; */
-    height:75vh;
+    height:65vh;
     width:55%;
     background-color: white;
 
-    /* margin-left: auto;
-    margin-right:auto; */
+    margin-left: auto;
+    margin-right:auto;
 
-    margin-top:40px;
+    margin-top:80px;
     border-radius: 23px 23px 136px 23px;
 }
 
@@ -28,6 +25,7 @@ body{
     display: flex;
     flex-direction: column;
     margin:20px 12px;
+    width:22%;
 }
 
 .innerbox input{
@@ -35,7 +33,7 @@ body{
     margin-left:30px;
     border-radius:8px;
     height:30px;
-    width:55%;
+    width:38%;
 }
 
 .innerbox p{
@@ -43,6 +41,7 @@ body{
     padding-top:18px;
     padding-bottom: 10px;
     opacity: 0.75;
+    font-family: 'Poppins', sans-serif;;
 }
 
 form {
@@ -57,5 +56,72 @@ form {
 
 .innerbox input[type=text]{
     padding:10px 15px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
 }
 
+.linebox{
+    display: flex;
+}
+
+.line{
+    width:70%;
+    margin-top:40px;
+    margin-left:30px;
+    margin-right:70px;
+}
+
+.calc{
+    border-radius: 40px;
+    height:80px;
+    width:80px;
+    background-color: hsl(259, 100%, 65%);
+    overflow: hidden;
+}
+
+.calc:hover{
+    background-color: black;
+}
+
+.output .year{
+    border:2px solid black;
+    display: flex;
+    margin-top:7px;
+}
+
+#y{
+    margin-left:40px;
+    margin-right: 5px;
+    font-size:4rem;
+    color:hsl(259, 100%, 65%);
+    font-weight: bolder;
+}
+
+.output .month{
+    border:2px solid black;
+    display: flex;
+    margin-top:7px;
+}
+
+#m{
+    margin-left:40px;
+    margin-right: 5px;
+    font-size:4rem;
+    color:hsl(259, 100%, 65%);
+    font-weight: bolder;
+}
+
+.output .days{
+    border:2px solid black;
+    display: flex;
+    margin-top:7px;
+}
+
+#d{
+    margin-left:40px;
+    margin-right: 5px;
+    font-size:4rem;
+    font-weight: bolder;
+    color:hsl(259, 100%, 65%);
+}

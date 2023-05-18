@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,300;1,700&display=swap" rel="stylesheet">
+
   
   <title>Frontend Mentor | Age calculator app</title>
 
@@ -27,21 +28,21 @@
           <div class="innerbox">
             <p>DAY</p>
     
-            <input type="text" placeholder="DD">
+            <input id="DAY" type="text" placeholder="DD">
           </div>
     
     
           <div class="innerbox">
             <p>MONTH</p> 
     
-            <input type="text" placeholder="MM">
+            <input type="text" placeholder="MM" id="MONTH">
           </div>
     
     
           <div class="innerbox">
             <p>YEAR</p>
     
-            <input type="text" placeholder="YYYY">
+            <input type="text" placeholder="YYYY" id="YEAR">
           </div>
 
         </form>
@@ -51,21 +52,21 @@
       <div class="linebox">
         <div class="line"><hr></div>
 
-        <button class="calc"><img src="assets/images/icon-arrow.png" alt=""></button>
+        <button class="calc" onclick="calculate()"><img src="assets/images/icon-arrow.png" alt=""></button>
       </div>
 
       <div class="output">
 
         <div class="year">
-          <h2 id="y">38</h2> <h2 id="y1">years</h2> 
+          <h2 id="y">--</h2> <h2 id="y1">years</h2> 
         </div>
 
         <div class="month">
-          <h2 id="m">28</h2> <h2 id="m1">months</h2>
+          <h2 id="m">--</h2> <h2 id="m1">months</h2>
         </div>
 
         <div class="days">
-          <h2 id="d">26</h2> <h2 id="d1">days</h2>
+          <h2 id="d">--</h2> <h2 id="d1">days</h2>
         </div>
 
       </div>
@@ -74,5 +75,11 @@
     </div>
 
   </div>
+
+  <script src="script.js"></script>
+
+
+
+
 </body>
 </html> 

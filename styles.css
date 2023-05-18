@@ -85,43 +85,70 @@ form {
 }
 
 .output .year{
-    border:2px solid black;
+    /* border:2px solid black; */
     display: flex;
-    margin-top:7px;
+    margin-top:3px;
+    box-sizing: border-box;
 }
 
 #y{
     margin-left:40px;
     margin-right: 5px;
-    font-size:4rem;
+    font-size:5rem;
     color:hsl(259, 100%, 65%);
     font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
 }
 
 .output .month{
-    border:2px solid black;
+    /* border:2px solid black; */
     display: flex;
-    margin-top:7px;
+    margin-top:3px;
 }
 
 #m{
     margin-left:40px;
     margin-right: 5px;
-    font-size:4rem;
+    font-size:5rem;
     color:hsl(259, 100%, 65%);
     font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
 }
 
 .output .days{
-    border:2px solid black;
+    /* border:2px solid black; */
     display: flex;
-    margin-top:7px;
+    margin-top:3px;
 }
 
 #d{
     margin-left:40px;
     margin-right: 5px;
-    font-size:4rem;
+    font-size:5rem;
     font-weight: bolder;
     color:hsl(259, 100%, 65%);
+    font-family: 'Poppins', sans-serif;
 }
+
+#y1{
+    font-size: 5rem;
+    margin-left:9px;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+}
+
+#m1{
+    font-size: 5rem;
+    margin-left:9px;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+}
+
+#d1{
+    font-size: 5rem;
+    margin-left:9px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+}
+

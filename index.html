@@ -23,12 +23,14 @@
     <div class="box"> <!--its not a box I shud have meant the header of the box but its too late-->
 
       <div class="outerbox">
-        <form action="">
+        <form action="" id="form">
         
           <div class="innerbox">
             <p>DAY</p>
     
             <input id="DAY" type="text" placeholder="DD">
+
+            <p id="error-day"></p>
           </div>
     
     
@@ -36,6 +38,7 @@
             <p>MONTH</p> 
     
             <input type="text" placeholder="MM" id="MONTH">
+            <p id="error-month"></p>
           </div>
     
     
@@ -43,6 +46,7 @@
             <p>YEAR</p>
     
             <input type="text" placeholder="YYYY" id="YEAR">
+            <p id="error-year"></p>
           </div>
 
         </form>
@@ -52,7 +56,7 @@
       <div class="linebox">
         <div class="line"><hr></div>
 
-        <button class="calc" onclick="calculate()"><img src="assets/images/icon-arrow.png" alt=""></button>
+        <button class="calc" onclick="NullError()"><img src="assets/images/icon-arrow.png" alt=""></button>
       </div>
 
       <div class="output">

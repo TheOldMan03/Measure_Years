@@ -162,3 +162,10 @@ form {
     font-style: italic;
 }
 
+.attribution{
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    margin-top:50px;
+}
+

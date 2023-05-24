@@ -10,12 +10,10 @@ function ageCalc(yearInput,monthInput,dayInput){
 
     yearOutput.innerHTML=currYear-yearInput.value
     monthOutput.innerHTML=Math.abs(currMonth-monthInput.value)
-    dayOutput.innerHTML=Math.abs(currDay-dayInput.value)+((monthInput.value-1)*30)
+    dayOutput.innerHTML=Math.abs(currDay-dayInput.value)
 }
 
 function dateChecker(yearInput,monthInput,dayInput,dError){
-
-    console.log(monthInput.value)
 
     if(monthInput.value<8){
         if(monthInput.value%2!=0 && monthInput.value!=2){

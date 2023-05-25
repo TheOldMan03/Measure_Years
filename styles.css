@@ -27,6 +27,7 @@ body{
     flex-direction: column;
     margin:20px 0px;
     width:26%;
+
 }
 
 .innerbox input{
@@ -80,6 +81,7 @@ form {
 
 .linebox{
     display: flex;
+    /* border:2px solid red; */
 }
 
 .line{
@@ -90,6 +92,7 @@ form {
 }
 
 .calc{
+    border:1px solid green;
     border-radius: 40px;
     height:80px;
     width:80px;
@@ -169,3 +172,38 @@ form {
     margin-top:50px;
 }
 
+
+@media screen and (max-width:1000px){
+    
+    .box{
+        /* border:2px solid red; */
+        height:65vh;
+        width:70%;
+        background-color: white;
+    
+        margin-left: auto;
+        margin-right:auto;
+    
+        margin-top:80px;
+        border-radius: 23px 23px 136px 23px;
+    }
+
+    .linebox{
+        display: block;
+    }
+
+    .line{
+        margin-top:20px;
+        margin-bottom: -25px;
+        width:90%;
+    }
+
+    .calc{
+       display: block;
+       margin-left: auto;
+       margin-right:auto;
+       margin-bottom: 2px;
+    }
+
+    
+}

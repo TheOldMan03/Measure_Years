@@ -13,14 +13,14 @@ function ageCalc(yearInput,monthInput,dayInput){
     dayOutput.innerHTML=Math.abs(currDay-dayInput.value)
 }
 
-function dateChecker(yearInput,monthInput,dayInput,dError){
+function dateChecker(yearInput,monthInput,dayInput,dError,elog){
 
     if(monthInput.value<8){
         if(monthInput.value%2!=0 && monthInput.value!=2){
             if(dayInput.value>31 || dayInput.value<1){
                 dError.innerHTML="Must be a valid date"
                 dayInput.style.borderColor="rgb(255, 87, 87)"
-                errorLog=true
+                elog=true
             }
 
             else{
@@ -34,7 +34,7 @@ function dateChecker(yearInput,monthInput,dayInput,dError){
                 if(dayInput.value>29 || dayInput.value<1){
                     dError.innerHTML="Must be a valid date"
                     dayInput.style.borderColor="rgb(255, 87, 87)"
-                    errorLog=true
+                    elog=true
 
                 }
 
@@ -48,7 +48,7 @@ function dateChecker(yearInput,monthInput,dayInput,dError){
                 if(dayInput.value>28 || dayInput.value<1){
                     dError.innerHTML="Must be a valid date"
                     dayInput.style.borderColor="rgb(255, 87, 87)"
-                    errorLog=true
+                    elog=true
 
                 }
 
@@ -63,7 +63,7 @@ function dateChecker(yearInput,monthInput,dayInput,dError){
             if(dayInput.value>30 || dayInput.value<1){
                 dError.innerHTML="Must be a valid date"
                 dayInput.style.borderColor="rgb(255, 87, 87)"
-                errorLog=true
+                elog=true
 
             }
 
@@ -79,7 +79,7 @@ function dateChecker(yearInput,monthInput,dayInput,dError){
             if(dayInput.value>30 || dayInput.value<1){
                 dError.innerHTML="Must be a valid date"
                 dayInput.style.borderColor="rgb(255, 87, 87)"
-                errorlog=true
+                elog=true
 
             }
 
@@ -93,7 +93,7 @@ function dateChecker(yearInput,monthInput,dayInput,dError){
             if(dayInput.value>31 || dayInput.value<1){
                 dError.innerHTML="Must be a valid date"
                 dayInput.style.borderColor="rgb(255, 87, 87)"
-                errorLog=true
+                elog=true
             }
 
             else{
@@ -102,6 +102,13 @@ function dateChecker(yearInput,monthInput,dayInput,dError){
             }
         }
     }
+
+    if(elog){
+        return elog
+    }
+
+    return false
+
 }
 
 
@@ -137,7 +144,11 @@ function validity(yearInput,monthInput,dayInput,yError,mError,dError){
 
     // checking day validity (skull emoji)
     if(!errorLog){
-        dateChecker(yearInput,monthInput,dayInput,dError)
+        var result=dateChecker(yearInput,monthInput,dayInput,dError,errorLog)
+        
+        if(result){
+            return;
+        }
     }
 
 
